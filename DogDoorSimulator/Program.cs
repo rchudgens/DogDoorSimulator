@@ -1,10 +1,16 @@
-﻿namespace DogDoorSimulator
+﻿using DogDoorSimulator.Models;
+
+namespace DogDoorSimulator
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            DogDoor door = new DogDoor();
+            Remote remote = new Remote(door);
+            
+            remote.PressButton();
+            remote.PressButton();
         }
     }
 }
