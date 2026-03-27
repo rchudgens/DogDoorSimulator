@@ -10,7 +10,9 @@ namespace DogDoorSimulator
             Remote remote = new Remote(door);
             
             remote.PressButton();
-            remote.PressButton();
+            //remote.PressButton();
+
+            Console.ReadLine();
         }
     }
 }

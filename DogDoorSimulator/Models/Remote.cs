@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace DogDoorSimulator.Models
 {
@@ -13,7 +14,7 @@ namespace DogDoorSimulator.Models
             _door = door;
         }
 
-        public void PressButton()
+        public async Task PressButton()
         {
             Console.WriteLine("Pressing the remote control button...");
             if (_door.IsOpen)
@@ -23,6 +24,9 @@ namespace DogDoorSimulator.Models
             else
             {
                 _door.Open();
+                await Task.Delay(5000); // Simulate the dog going through the door
+                _door.Close();
+                Console.WriteLine("The dog has gone through the door and it is now closed.");
             }
         }
     }
