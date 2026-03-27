@@ -24,7 +24,8 @@ namespace DogDoorSimulator.Models
             else
             {
                 _door.Open();
-                await Task.Delay(5000); // Simulate the dog going through the door
+                //await Task.Delay(5000); // Simulate the dog going through the door
+                Thread.Sleep(5000); // Simulate the dog going through the door
                 _door.Close();
                 Console.WriteLine("The dog has gone through the door and it is now closed.");
             }
