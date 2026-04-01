@@ -1,0 +1,5 @@
+Kristen And Bitsie Dog Door Requirements
+
+1. The keypad must accept a 4 digit code.
+2. The kepad must be able to lock the dog door and all the windows.
+3. The kepad must be able to unlock the dog door and all the windows.

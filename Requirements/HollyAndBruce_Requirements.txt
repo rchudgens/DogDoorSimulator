@@ -1,0 +1,5 @@
+Holly and Bruce Dog Door Requirements
+
+1 The dog door must detect scratching from a dog.
+2. The door should be able to open on a command from #1.
+3. The dog door should close automatically.
