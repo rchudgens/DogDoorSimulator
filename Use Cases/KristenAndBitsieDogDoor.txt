@@ -1,0 +1,11 @@
+Kristen And Bitsie's Dog Door - What the Door Does
+
+Lock Dog Door
+1. Kristen Enters Code.
+2. Dog door and all the window in the house lock.
+
+Unlock Dog Door
+1. Kristen enters code.
+2. Dog door and all the windows in the house unlock.
+
+

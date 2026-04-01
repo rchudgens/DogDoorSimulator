@@ -1,0 +1,14 @@
+John and Tex's Dog Door - What the Door Does
+
+1. Tex barks to be let out.
+2. John hears Bruce barking.
+3. John presses the button on the remote control.
+4. The dog door opens.
+5. Bruce goes outside.
+6. The dog shuts automatically.
+6. Bruce does his business.
+7. Bruce barks to be let back inside.
+8. John presses the button on the remote control.
+9. The dog door opens (again).
+7. Bruce goes back inside.
+8. The door shuts automatically.

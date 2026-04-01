@@ -1,0 +1,13 @@
+Holly And Bruce's Dog Door - What the Door Does
+
+Bruce wants to go outside:
+1. Bruce scratches door with paws.
+2. Dog Door opens.
+3. Bruce goes outside.
+4. Dog Door closes automatically. 
+
+Bruce wants to go inside:
+1. Bruce scratches door with paws.
+2. Dog Door opens.
+3. Bruce goes inside.
+4. Dog Door closes automatically. 
