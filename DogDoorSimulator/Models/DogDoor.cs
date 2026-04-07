@@ -17,6 +17,8 @@ namespace DogDoorSimulator.Models
         {
             Console.WriteLine("The dog door opens.");
             IsOpen = true;
+            Thread.Sleep(5000); // Simulate the dog going through the door
+            Close();
         }
         public void Close()
         {

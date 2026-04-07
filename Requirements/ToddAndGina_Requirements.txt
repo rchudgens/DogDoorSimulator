@@ -1,0 +1,6 @@
+Todd And Gina Dog Door Requirements
+
+1. The dog door opening must be at least 12".
+2. A button on the remote control opens the dog door if the door is closed, and closes the dog door if the door is open.
+3. Once the dog door is open, it should close automatically.
+4. Dog door must detect Fido barking and open.

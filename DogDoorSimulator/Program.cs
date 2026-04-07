@@ -7,15 +7,29 @@ namespace DogDoorSimulator
         static void Main(string[] args)
         {
             DogDoor door = new DogDoor();
+            BarkRecognizer recognizer = new BarkRecognizer(door);
             Remote remote = new Remote(door);
             
-            Console.WriteLine("Fido barks to go outside...");
-            Console.WriteLine("Fido's owner presses the remote control button...");
-            remote.PressButton();
-            Console.WriteLine("Fido has gone outside...");
-            Console.WriteLine("Now Fido is done and barks to come back inside...");
-            Console.WriteLine("Fido's owner presses the remote control button...");
-            remote.PressButton();
+            //Simulate the hardware hearing a bark
+            Console.WriteLine("Fido starts barking...");
+            recognizer.Recognize("Woof");
+            Console.WriteLine("\nFido has gone outside...");
+            Console.WriteLine("\nFido's all done...");
+
+            try
+            {
+                Thread.Sleep(10000);
+            }
+            catch (ThreadInterruptedException e)
+            {
+                Console.WriteLine(e.Message);
+            }
+
+            Console.WriteLine("\n...but he's stuck outside!");
+
+            //Simulate the hardware hearing a bark again
+            Console.WriteLine("\nFido starts barking...");
+            recognizer.Recognize("Woof");
             Console.WriteLine("Fido is back inside...");
 
             Console.ReadLine();
