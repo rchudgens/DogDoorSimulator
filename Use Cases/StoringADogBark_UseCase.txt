@@ -1,0 +1,4 @@
+StoringADogBark_UseCase
+
+1. The owner's dog barks "into" the dog door.
+2. The dog door stores the owners dog's bark.
