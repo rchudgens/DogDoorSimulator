@@ -1,0 +1,12 @@
+Class: BarkRecognizer
+
+Attributes
+----------
+door: DogDoor
+
+
+Methods
+-------
+Recognize(string)
+
+

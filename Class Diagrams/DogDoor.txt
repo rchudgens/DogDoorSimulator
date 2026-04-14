@@ -1,0 +1,13 @@
+Class: DogDoor
+
+Attributes
+----------
+open: boolean
+
+
+Methods
+-------
+Open()
+Close()
+IsOpen(): boolean
+

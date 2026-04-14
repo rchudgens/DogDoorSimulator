@@ -1,0 +1,11 @@
+Class: Bark
+
+Attributes
+----------
+sound: string
+
+
+Methods
+-------
+GetSound(): string
+Equals(Object bark): boolean

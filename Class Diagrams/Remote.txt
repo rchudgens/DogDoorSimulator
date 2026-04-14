@@ -1,0 +1,10 @@
+Class: Remote
+
+Attributes
+----------
+door: DogDoor
+
+
+Methods
+-------
+PressButton()
