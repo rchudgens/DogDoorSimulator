@@ -9,8 +9,9 @@ namespace DogDoorSimulator.Models
         public bool IsOpen { get; set; }
         public Bark AllowedBark { get; set; }
 
-        public DogDoor()
+        public DogDoor(Bark allowedBark)
         {
+            AllowedBark = allowedBark;
             IsOpen = false;
         }
 

@@ -6,13 +6,13 @@ namespace DogDoorSimulator
     {
         static void Main(string[] args)
         {
-            DogDoor door = new DogDoor();
+            DogDoor door = new DogDoor(new Bark("Woof!"));
             BarkRecognizer recognizer = new BarkRecognizer(door);
             Remote remote = new Remote(door);
             
             //Simulate the hardware hearing a bark
             Console.WriteLine("Fido starts barking...");
-            recognizer.Recognize("Woof");
+            recognizer.Recognize(new Bark("Woof!"));
             Console.WriteLine("\nFido has gone outside...");
             Console.WriteLine("\nFido's all done...");
 
@@ -29,7 +29,7 @@ namespace DogDoorSimulator
 
             //Simulate the hardware hearing a bark again
             Console.WriteLine("\nFido starts barking...");
-            recognizer.Recognize("Woof");
+            recognizer.Recognize(new Bark("Woof!"));
             Console.WriteLine("Fido is back inside...");
 
             Console.ReadLine();

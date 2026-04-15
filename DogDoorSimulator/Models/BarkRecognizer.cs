@@ -11,12 +11,14 @@ namespace DogDoorSimulator.Models
             _door = door;
         }
 
-        public void Recognize(string bark)
+        public void Recognize(Bark bark)
         {
+
             Console.WriteLine($"BarkRecognizer: Heard a {bark}");
-            // In a real implementation, you would have logic to determine if the bark is recognized
-            // For this simulation, we will assume any bark is recognized
-            _door.Open();
+            if(_door.GetAllowedBark().Equals(bark))
+                _door.Open();
+            else
+                Console.WriteLine("BarkRecognizer: This dog is not allowed.");
         }
     }
 }
