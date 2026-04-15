@@ -7,6 +7,7 @@ namespace DogDoorSimulator.Models
     internal class DogDoor
     {
         public bool IsOpen { get; set; }
+        public Bark AllowedBark { get; set; }
 
         public DogDoor()
         {
@@ -24,6 +25,16 @@ namespace DogDoorSimulator.Models
         {
             Console.WriteLine("The dog door closes.");
             IsOpen = false;
+        }
+
+        public void SetAllowedBark(Bark bark)
+        {
+            AllowedBark = bark;
+        }
+
+        public Bark GetAllowedBark()
+        {
+            return AllowedBark;
         }
     }
 }
