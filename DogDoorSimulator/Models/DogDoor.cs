@@ -7,11 +7,11 @@ namespace DogDoorSimulator.Models
     internal class DogDoor
     {
         public bool IsOpen { get; set; }
-        public Bark AllowedBark { get; set; }
+        public List<Bark> AllowedBarks { get; set; }
 
-        public DogDoor(Bark allowedBark)
+        public DogDoor()
         {
-            AllowedBark = allowedBark;
+            SetAllowedBarks();
             IsOpen = false;
         }
 
@@ -28,14 +28,19 @@ namespace DogDoorSimulator.Models
             IsOpen = false;
         }
 
-        public void SetAllowedBark(Bark bark)
+        public void SetAllowedBarks()
         {
-            AllowedBark = bark;
+            AllowedBarks = new List<Bark> { new Bark("Woof!"), new Bark("Bow-wow!"), new Bark("Ruff!") };
         }
 
-        public Bark GetAllowedBark()
+        public List<Bark> GetAllowedBarks()
         {
-            return AllowedBark;
+            return AllowedBarks;
+        }
+
+        public void AddAllowedBark(Bark bark) 
+        {
+            AllowedBarks.Add(bark);
         }
     }
 }
